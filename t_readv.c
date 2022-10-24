@@ -12,4 +12,6 @@ int main(int argc, char **argv)
 	int x;
 #define STR_SIZE 100
 	char str[STR_SIZE];
+	int fd;
+	struct iovec iov[3];
 }
