@@ -11,4 +11,12 @@ int main(int argc, char **argv)
 	int x;
 #define STR_SIZE 100
 	char str[STR_SIZE];
+	ssize_t numRead,totRequired;
+	
+	if (agrc != 2 || strcmp(argv[1],"help") == 0)
+		usageErr("%s file\n", argv[0]);
+
+	fd = open(argv[1],O_RDONLY);
+	if(fd == -1)
+		errExit("open");
 }
