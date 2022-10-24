@@ -30,4 +30,8 @@ int main(int argc, char **argv)
 	iov[1].iov_len  = sizeof(x);
 	totRequired+= iov[1].iov_len;
 	
+
+	
+
+	numRead = readv(fd,iov,3);
 }
