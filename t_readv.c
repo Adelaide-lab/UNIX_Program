@@ -22,4 +22,11 @@ int main(int argc, char **argv)
 	fd = open(argv[1],O_RDONLY);
 	if(fd == -1)
 		errExit("open");
+	
+	
+	
+	iov[1].iov_base = &x;
+	iov[1].iov_len  = sizeof(x);
+	totRequired+= iov[1].iov_len;
+	
 }
