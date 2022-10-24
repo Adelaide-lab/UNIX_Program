@@ -6,4 +6,6 @@
 int main(int argc, char **argv)
 {
 	printf("hello, don't be sad(^v^) \n");
+	int fd;
+	struct iovec iov[3];
 }
