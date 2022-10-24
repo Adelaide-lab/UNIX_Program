@@ -23,10 +23,12 @@ int main(int argc, char **argv)
 	if(fd == -1)
 		errExit("open");
 	
-	
-	
 	iov[1].iov_base = &x;
 	iov[1].iov_len  = sizeof(x);
 	totRequired+= iov[1].iov_len;
 	
+	totRequired = 0;
+	
+	iov[0].iov_base = &myStruct;
+	iov[0].iov_len  = sizeof(struct stat);
 }
