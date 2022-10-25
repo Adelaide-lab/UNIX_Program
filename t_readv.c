@@ -41,6 +41,8 @@ int main(int argc, char **argv)
 
 	if(numRead < totRequired)
 		printf("Read fewer bytes than required.\n");
+	
 
 	
+	exit(EXIT_SUCCESS);	
 }
