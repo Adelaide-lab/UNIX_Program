@@ -1,4 +1,4 @@
-#include "lib/include/tlpi_hdr.h"
+#include "tlpi_hdr.h"
 #include <fcntl.h>
 #include <sys/stat.h>
 
