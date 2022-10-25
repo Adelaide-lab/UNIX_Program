@@ -35,4 +35,7 @@ int main(int argc, char **argv)
 	totRequired+= iov[2].iov_len;
 
 	numRead = readv(fd,iov,3);
+
+	if(numRead < totRequired)
+		printf("Read fewer bytes than required.\n");
 }
