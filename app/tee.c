@@ -40,7 +40,6 @@ int main(int argc,char **argv)
 	int flag=O_WRONLY|O_CREAT|(append_option?O_APPEND:O_TRUNC);
 	int perms=S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IWOTH|S_IROTH;
 	int fd=open(filename,flag,perms);
-	printf("It's really sucks!");
         	
 	if(fd==-1)
 	   errExit("open file %s failed",filename);
